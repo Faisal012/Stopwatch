@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_800"
+    tools:context=".StopWatchAct">
+
+    <ImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="282dp"
+        android:layout_height="294dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/bgcircle"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_width="345dp"
+        android:layout_height="357dp"
+        android:src="@drawable/icanchor"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="68sp"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@+id/imageCircle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Start Now"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/bgbtncolor"
+        android:layout_marginTop="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCircle"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Stop"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/bgbtncolor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
